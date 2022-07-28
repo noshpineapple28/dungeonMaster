@@ -46,6 +46,20 @@ var items = {
     //TODO: impliment chat functionality
     members: {}, //holds all members
   },
+  decree: {
+    name: "Message from Anglemount",
+    thumbnail: "./media/messages/noteThumb.png",
+    model: "./media/messages/note.stl",
+    texture: "./media/messages/note.png",
+    notes: "./media/messages/note.txt",
+    display: (s) => {
+      s.texture(items.decree.texture);
+      s.ambientLight(200);
+      s.noStroke();
+      s.directionalLight(150, 100, 100, -100, -100, -100);
+      s.model(items.decree.model);
+    },
+  },
 };
 var ui = [];
 var lockerItems = [];
@@ -70,6 +84,13 @@ var layouts = (s) => {
     );
     thumbnails.push(items["sending stone"].thumbnail);
     items["sending stone"].notes = s.loadStrings(items["sending stone"].notes);
+    //Anglmount note
+    lockerItems.push(s.loadImage(items.decree.thumbnail));
+    items.decree.thumbnail = s.loadImage(items.decree.thumbnail);
+    thumbnails.push(items.decree.thumbnail);
+    items.decree.model = s.loadModel(items.decree.model);
+    items.decree.texture = s.loadImage(items.decree.texture);
+    items.decree.notes = s.loadStrings(items.decree.notes);
     //UI elements
     ui.push(s.loadImage("./media/ui/inventory.png"));
     ui.push(s.loadImage("./media/ui/notes.png"));

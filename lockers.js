@@ -460,6 +460,14 @@ function createLocker() {
             chatLog: [],
           };
           break;
+          case 2: //decree from anglemount
+          item = {
+            id: "decree",
+            name: "Message from Anglemount",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
       }
       socket.emit("add item", [selectedInventory[1], item]);
     };
