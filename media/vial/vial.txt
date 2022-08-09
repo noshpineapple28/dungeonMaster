@@ -1,0 +1,1 @@
+    The crest of Hailsport, a vial of fluid. The glass used to be translucent, but over the ages, it has been painted over in white for reasons unknown. ENTER_LINE When shaken, a thick fluid can be felt moving around, viscous and heavy. ENTER_LINE Any members of Hailsport that serve or vow to this crest are granted a uniquely Hailsport speed. 

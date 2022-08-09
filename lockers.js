@@ -444,7 +444,7 @@ function createLocker() {
         case 0: //giraffe
           item = {
             id: "giraffe",
-            name: "Wooden Giraffe",
+            name: "Crest of Dreven",
             originalOwner: selectedInventory[1],
             currentOwner: selectedInventory[1],
             playerAdditions: [],
@@ -468,6 +468,52 @@ function createLocker() {
             currentOwner: selectedInventory[1],
             playerAdditions: [],
           }
+          break;
+          case 3: //crest of regendale
+          item = {
+            id: "regendaleCrest",
+            name: "Crest of Regendale",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
+          break;
+          case 4: //crest of hailsport
+          item = {
+            id: "vial",
+            name: "Crest of Hailsport",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
+          break;
+          case 5: //crest of corendeck
+          item = {
+            id: "ear",
+            name: "Crest of Corendeck",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
+          break;
+          case 6: //crest of anglemount
+          item = {
+            id: "obelisk",
+            name: "Crest of Anglemount",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
+          break;
+          case 7: //old journal
+          item = {
+            id: "journal",
+            name: "Old Journal",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
+          break;
       }
       socket.emit("add item", [selectedInventory[1], item]);
     };
