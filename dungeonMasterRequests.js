@@ -37,9 +37,9 @@ socket.on("connect", () => {
   });
   //recieve private messages
   socket.on("private message", (data) => {
-    if (data)
+    if (data.note.senderID != id) {
     items["sending stone"].chatLog.push(data.note);
-  });
+  }});
 
   //recieve new players for the members object
   socket.on("update player list", (users) => {

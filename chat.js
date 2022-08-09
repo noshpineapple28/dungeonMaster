@@ -277,6 +277,9 @@ function createChat() {
         typing = true;
         selectRecipient = false;
         clicked = false;
+      } else if (typing && clicked) {
+        typing = false;
+        clicked = false;
       }
 
       //display text
@@ -355,7 +358,7 @@ function createChat() {
               recipientID: recipient,
               msg: note,
             };
-            items[displayText].chatLog.push(note);
+            items["sending stone"].chatLog.push(note);
             socket.emit("chat message", { note });
           } else {
             note = {
@@ -364,7 +367,7 @@ function createChat() {
               recipient: recipient,
               msg: note,
             };
-            arrayOfItems[displayText].chatLog.push(note);
+            items["sending stone"].chatLog.push(note);
             socket.emit("private message", { note });
           }
           note = "";
