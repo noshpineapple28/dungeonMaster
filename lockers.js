@@ -514,6 +514,69 @@ function createLocker() {
             playerAdditions: [],
           }
           break;
+          case 8: //broken sword
+          item = {
+            id: "brokeSword",
+            name: "Broken Sword",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
+          break;
+          case 9: //decree from Corendeck
+          item = {
+            id: "decreeCOR",
+            name: "Message from Corendeck",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
+          break;
+          case 10: //decree from Dreven
+          item = {
+            id: "decreeDRE",
+            name: "Message from Dreven",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
+          break;
+          case 11: //decree from Hailsport
+          item = {
+            id: "decreeHAL",
+            name: "Message from Hailsport",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
+          break;
+          case 12: //decree from Regendale
+          item = {
+            id: "decreeREG",
+            name: "Message from Regendale",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
+          break;
+          case 13: //broken vial
+          item = {
+            id: "brokenVial",
+            name: "Broken Vial",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
+          break;
+          case 14: //broken ear
+          item = {
+            id: "brokenEar",
+            name: "Dead Ear",
+            originalOwner: selectedInventory[1],
+            currentOwner: selectedInventory[1],
+            playerAdditions: [],
+          }
+          break;
       }
       socket.emit("add item", [selectedInventory[1], item]);
     };
