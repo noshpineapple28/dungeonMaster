@@ -37,6 +37,7 @@ socket.on("connect", () => {
   });
   //recieve private messages
   socket.on("private message", (data) => {
+    if (data)
     items["sending stone"].chatLog.push(data.note);
   });
 
